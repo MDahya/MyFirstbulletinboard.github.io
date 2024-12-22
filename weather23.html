@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+.bg-Header{
+ background-color:#0a314d;
+  }
+.stylewidget{
+padding-top:-5%;
+padding-bottom:-5%;
+}
+.current .weatherInfo {
+    display:  table-cell;
+}
+.currentTemp {
+    font-size: 1em;
+}
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+ 
+	<a class="weatherwidget-io stylewidget" style="display:table-cell;font-size:1rem;width:19%;height:70px;margin:" href="https://forecast7.com/en/24d7146d68/riyadh/?unit=us" data-font="Roboto Slab" data-icons="Climacons Animated" data-mode="Current" data-days="3" data-theme="pure" >Riyadh Saudi Arabia</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
+
+</div>
+
+
+
+
+</body>
+</html>
