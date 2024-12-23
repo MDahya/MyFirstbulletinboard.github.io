@@ -15,7 +15,7 @@ html {
 }
 body {
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: Roboto Slab, sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
   display: flex;
@@ -27,25 +27,16 @@ body {
   max-width: 600px;
 }
 
-/* for smaller screens below 700px */
-@media only screen and (max-width: 700px) {
-  body {
-    font-size: 1.8rem;
-  }
-}
 
-/*for smaller screens below 300px*/
-@media only screen and (max-width: 300px) {
-  body {
-    font-size: 1.6rem;
-  }
-}
 
 </style>
 <body>
 
     
 <div id="clock">
+  <h1 id="date-time"></h1>
+</div>
+    <div id="clock">
   <h1 id="date-time"></h1>
 </div>
 </body>
@@ -100,10 +91,12 @@ window.addEventListener("load", () => {
     const time = hourTime + ":" + minute + ":" + second +" "+ ampm;
 
     //combine current date and time
-    const dateTime = date + " - " + time;
+    const TimeOnly =  time;
+      const dateOnly = date ;
 
     //print current date and time to the DOM
-    document.getElementById("date-time").innerHTML = dateTime;
+    document.getElementById("onlytime").innerHTML = TimeOnly;
+      document.getElementById("only-date").innerHTML = dateOnly;
     setTimeout(clock, 1000);
   }
 });
